@@ -12,8 +12,8 @@
   font-weight: var(--font-weight-light);
 }
 
-.color-body {
-  color: var(--grayish-blue);
+.color-text-primary {
+  color: var(--color-text-primary);
 }
 
 .cards-list {
@@ -45,19 +45,19 @@
 }
 
 .card#supervisor {
-  border-top: 5px solid var(--cyan);
+  border-top: 5px solid var(--color-cyan);
 }
 
 .card#team-builder {
-  border-top: 5px solid var(--red);
+  border-top: 5px solid var(--color-red);
 }
 
 .card#karma {
-  border-top: 5px solid var(--orange);
+  border-top: 5px solid var(--color-orange);
 }
 
 .card#calculator {
-  border-top: 5px solid var(--blue);
+  border-top: 5px solid var(--color-blue);
 }
 
 @media (min-width: 768px) {
