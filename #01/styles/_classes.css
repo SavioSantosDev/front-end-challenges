@@ -1,0 +1,100 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 var(--gutter);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fw-light {
+  font-weight: var(--font-weight-light);
+}
+
+.color-body {
+  color: var(--grayish-blue);
+}
+
+.cards-list {
+  display: grid;
+  gap: var(--gutter);
+}
+
+.card {
+  display: block;
+  padding: var(--spacing-5);
+  border-radius: var(--spacing-2);
+
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card h2,
+.card p {
+  width: 100%;
+  margin-bottom: var(--spacing-3);
+}
+
+.card-image {
+  width: 4rem;
+}
+
+.card#supervisor {
+  border-top: 5px solid var(--cyan);
+}
+
+.card#team-builder {
+  border-top: 5px solid var(--red);
+}
+
+.card#karma {
+  border-top: 5px solid var(--orange);
+}
+
+.card#calculator {
+  border-top: 5px solid var(--blue);
+}
+
+@media (min-width: 768px) {
+  .card#supervisor {
+    grid-area: card-supervisor;
+  }
+
+  .card#team-builder {
+    grid-area: card-team-builder;
+  }
+
+  .card#karma {
+    grid-area: card-karma;
+  }
+
+  .card#calculator {
+    grid-area: card-calculator;
+  }
+
+  .cards-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card-supervisor card-team-builder"
+      "card-karma card-calculator";
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "card-supervisor card-team-builder card-calculator"
+      "card-supervisor card-karma card-calculator";
+  }
+
+  .card#calculator,
+  .card#supervisor {
+    align-self: center;
+  }
+}

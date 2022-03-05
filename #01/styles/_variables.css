@@ -1,0 +1,52 @@
+:root {
+  /* Colors */
+
+  --black: #000;
+  --white: #fff;
+
+  --red: #ea5353;
+  --cyan: #45d3d3;
+  --orange: #fcaf4a;
+  --blue: #549ef2;
+
+  --very-dark-blue: #393b49;
+  --grayish-blue: #767880;
+  --very-light-gray: #fafafa;
+
+  /* Typography */
+
+  --font-family: "Poppins", sans-serif;
+  --font-weight-light: 200;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  --font-size-mobile: 12;
+  --font-size-tablet: 14;
+  --font-size-desktop: 16;
+
+  --font-size-h1-mobile: 24;
+  --font-size-h1-tablet: 28;
+  --font-size-h1-desktop: 32;
+
+  --font-size-h2-mobile: 16;
+  --font-size-h2-tablet: 20;
+  --font-size-h2-desktop: 24;
+
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Breakpoints */
+
+  --bp-tablet: 768;
+  --bp-desktop: 1440;
+
+  /* Utilities */
+
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 1rem;
+  --spacing-4: 1.25rem;
+  --spacing-5: 2rem;
+
+  --gutter: var(--spacing-5);
+}
