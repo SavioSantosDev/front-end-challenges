@@ -1,0 +1,45 @@
+body {
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  font-size: clamp(
+    calc(1px * var(--font-size-mobile)),
+    calc(1vw * calc((var(--font-size-tablet) * 100 / var(--bp-tablet)))),
+    calc(1px * var(--font-size-desktop))
+  );
+}
+
+h1,
+h2 {
+  color: var(--color-black);
+  margin-bottom: var(--spacing-2);
+}
+
+h1 {
+  line-height: var(--line-height-heading);
+  font-size: clamp(
+    calc(1px * var(--font-size-h1-mobile)),
+    calc(1vw * calc((var(--font-size-h1-tablet) * 100 / var(--bp-tablet)))),
+    calc(1px * var(--font-size-h1-desktop))
+  );
+}
+
+h2 {
+  line-height: var(--line-height-heading);
+  font-size: clamp(
+    calc(1px * var(--font-size-h2-mobile)),
+    calc(1vw * calc((var(--font-size-h2-tablet) * 100 / var(--bp-tablet)))),
+    calc(1px * var(--font-size-h2-desktop))
+  );
+}
+
+main {
+  padding: var(--spacing-5) 0;
+}
+
+section {
+  margin-bottom: var(--spacing-5);
+}
