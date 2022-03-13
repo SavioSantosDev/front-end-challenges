@@ -1,0 +1,44 @@
+:root {
+  --image-header-mobile: url("/02/assets/images/mobile/image-header.jpg");
+  --image-header-desktop: url("/02/assets/images/desktop/image-header.jpg");
+  --arrow-down: url("/02/assets/icons/icon-arrow-down.svg");
+}
+
+#section-header {
+  width: 100vw;
+  padding-top: 128px;
+  padding-bottom: 320px;
+
+  background-size: 32px, cover;
+  background-repeat: no-repeat;
+}
+
+#section-header h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+@media (orientation: portrait) {
+  #section-header {
+    background-image: var(--arrow-down), var(--image-header-mobile);
+    background-position: 50% 64%, bottom;
+  }
+}
+
+@media (orientation: landscape) {
+  #section-header {
+    background-image: var(--arrow-down), var(--image-header-desktop);
+    background-position: 50% 50%, bottom;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #section-header {
+    padding-bottom: 40%;
+    background-image: var(--arrow-down), var(--image-header-desktop);
+    background-position: 50% 50%, bottom;
+  }
+}
