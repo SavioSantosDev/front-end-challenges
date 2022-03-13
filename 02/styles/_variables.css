@@ -1,0 +1,32 @@
+:root {
+  /*
+    ### Layout
+  */
+
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  /*
+    ### Colors
+  */
+
+  --soft-red: #fe7867;
+  --yellow: #fad400;
+  --dark-desaturated-cyan: #25564b;
+  --dark-blue: #19536b;
+  --dark-moderate-cyan: #458c7e;
+
+  --very-dark-desaturated-blue: #23303e;
+  --very-dark-grayish-blue: #5a636c;
+  --dark-grayish-blue: #818498;
+  --grayish-blue: #a7abae;
+  --white: #ffffff;
+
+  /*
+    ### Typography
+  */
+
+  --font-size: 18px;
+  --font-family-body: "Barlow", sans-serif;
+  --font-family-headings: "Fraunces", serif;
+}
