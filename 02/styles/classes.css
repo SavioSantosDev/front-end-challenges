@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--max-width-container-on-breakpoint-tablet);
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: var(--max-width-container-on-breakpoint-desktop);
+  }
+}

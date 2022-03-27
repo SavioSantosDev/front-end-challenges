@@ -3,8 +3,12 @@
     ### Layout
   */
 
-  --breakpoint-mobile: 375px;
-  --breakpoint-desktop: 1440px;
+  --breakpoint-tablet: 758px;
+  --max-width-container-on-breakpoint-tablet: 720px;
+  --breakpoint-desktop: 1600px;
+  --max-width-container-on-breakpoint-desktop: 1440px;
+
+  --gutter: 24px;
 
   /*
     ### Colors

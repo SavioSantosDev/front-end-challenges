@@ -1,11 +1,4 @@
-:root {
-  --image-header-mobile: url("/02/assets/images/mobile/image-header.jpg");
-  --image-header-desktop: url("/02/assets/images/desktop/image-header.jpg");
-  --arrow-down: url("/02/assets/icons/icon-arrow-down.svg");
-}
-
 #section-header {
-  width: 100vw;
   padding-top: 128px;
   padding-bottom: 320px;
 
@@ -23,14 +16,16 @@
 
 @media (orientation: portrait) {
   #section-header {
-    background-image: var(--arrow-down), var(--image-header-mobile);
+    background-image: url("/02/assets/icons/icon-arrow-down.svg"),
+      url("/02/assets/images/mobile/image-header.jpg");
     background-position: 50% 64%, bottom;
   }
 }
 
 @media (orientation: landscape) {
   #section-header {
-    background-image: var(--arrow-down), var(--image-header-desktop);
+    background-image: url("/02/assets/icons/icon-arrow-down.svg"),
+      url("/02/assets/images/desktop/image-header.jpg");
     background-position: 50% 50%, bottom;
   }
 }
@@ -38,7 +33,8 @@
 @media screen and (min-width: 720px) {
   #section-header {
     padding-bottom: 40%;
-    background-image: var(--arrow-down), var(--image-header-desktop);
+    background-image: url("/02/assets/icons/icon-arrow-down.svg"),
+      url("/02/assets/images/desktop/image-header.jpg");
     background-position: 50% 50%, bottom;
   }
 }
