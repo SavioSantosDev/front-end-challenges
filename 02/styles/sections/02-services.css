@@ -1,63 +1,81 @@
 #section-services > section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#section-services .section-service-image {
+  min-width: 100%;
+  padding-bottom: 80%;
+  background-size: cover;
+  background-position: center;
 }
 
 #section-services .container {
-  display: flex;
-}
-
-#section-services .container img {
-  width: 100%;
-}
-
-#section-services .container > article {
-  width: 50%;
-  min-width: 50%;
-  padding: 10% 24px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#section-services .container > article:nth-child(odd) {
-  padding-right: 96px;
-}
-
-#section-services .container > article:nth-child(even) {
-  padding-left: 96px;
+#section-services .container > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #section-services .container > article > *:not(:last-child) {
   margin-bottom: 32px;
 }
 
-#transform-your-brand img {
-  content: url("../../assets/images/mobile/image-transform.jpg");
+#transform-your-brand .section-service-image {
+  background-image: url("../../assets/images/mobile/image-transform.jpg");
 }
 
-#stand-out img {
-  content: url("../../assets/images/mobile/image-stand-out.jpg");
+#stand-out .section-service-image {
+  background-image: url("../../assets/images/mobile/image-stand-out.jpg");
+}
+
+#graphic-design,
+#photography {
+  position: relative;
+  text-align: center;
+}
+
+#graphic-design > article,
+#photography > article {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#graphic-design {
+  background-image: url("../../assets/images/desktop/image-graphic-design.jpg");
+}
+
+#photography {
+  background-image: url("../../assets/images/desktop/image-photography.jpg");
 }
 
 @media (min-width: 768px) {
-  #section-services .container > img {
-    min-width: calc(
-      50% + var(--gutter) +
-        ((100vw - var(--max-width-container-on-breakpoint-tablet)) / 2)
-    );
-  }
-
-  #transform-your-brand img {
-    content: url("../../assets/images/desktop/image-transform.jpg");
+  #transform-your-brand .section-service-image {
+    background-image: url("../../assets/images/desktop/image-transform.jpg");
   }
 }
 
 @media (min-width: 1600px) {
-  #section-services .container > img {
-    min-width: calc(
-      50% + ((100vw - var(--max-width-container-on-breakpoint-desktop)) / 2) +
+  #section-services .container:nth-child(odd) {
+    padding-left: calc(
+      (100vw - var(--max-width-container-on-breakpoint-desktop)) / 2 +
         var(--gutter) / 2
     );
+    padding-right: 128px;
+  }
+
+  #section-services .container:nth-child(even) {
+    padding-right: calc(
+      (100vw - var(--max-width-container-on-breakpoint-desktop)) / 2
+    );
+    padding-left: 128px;
   }
 }
