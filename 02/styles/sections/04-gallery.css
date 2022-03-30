@@ -1,0 +1,13 @@
+#section-gallery {
+  max-width: 100%;
+}
+
+#section-gallery figure {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#section-gallery img {
+  width: 100%;
+}
