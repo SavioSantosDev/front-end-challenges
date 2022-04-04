@@ -1,0 +1,44 @@
+#global-footer {
+  padding: 144px 0;
+  background-color: var(--dark-moderate-cyan);
+  color: var(--very-dark-desaturated-blue);
+  text-align: center;
+}
+
+#global-footer nav .container:not(:last-child) {
+  margin-bottom: 144px;
+}
+
+#global-footer nav .brand {
+  margin-bottom: 48px;
+  display: block;
+}
+
+#global-footer nav .brand svg {
+  width: 240px;
+}
+
+#global-footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+#global-footer nav ul li {
+  display: block;
+}
+
+#global-footer nav ul li:not(:last-child) {
+  margin-right: 48px;
+}
+
+#global-footer nav ul li a {
+  text-decoration: none;
+}
+
+#global-footer address > svg {
+  width: 24px;
+}
+
+#global-footer address > svg:not(:last-child) {
+  margin-right: 32px;
+}
