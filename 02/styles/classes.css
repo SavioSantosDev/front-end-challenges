@@ -4,6 +4,11 @@
   padding: 0 var(--gutter);
 }
 
+.brand {
+  width: 240px;
+  display: block;
+}
+
 .btn-learn-more {
   background: none;
   border: none;

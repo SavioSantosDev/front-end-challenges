@@ -1,3 +1,51 @@
 #top-navbar {
-  position: fixed;
+  position: absolute;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  color: var(--white);
+}
+
+#top-navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-navbar ul {
+  display: flex;
+}
+
+#top-navbar ul li {
+  display: block;
+}
+
+#top-navbar ul li:not(:last-child) {
+  margin-right: 48px;
+}
+
+#top-navbar ul li a {
+  padding: 16px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#top-navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+#top-navbar a.contact-link {
+  padding: 24px 32px;
+  border-radius: 100px;
+  background-color: var(--white);
+  color: var(--color-heading);
+  font-family: var(--font-family-headings);
+  text-transform: uppercase;
+}
+
+#top-navbar a.contact-link:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(255, 255, 255, 0.4);
 }

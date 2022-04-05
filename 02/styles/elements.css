@@ -10,6 +10,7 @@ body {
   font-size: var(--font-size-body);
   line-height: 1.5;
   color: var(--color-paragraph);
+  font-weight: 600;
 }
 
 h1,
@@ -43,4 +44,5 @@ h4 {
 
 a {
   color: inherit;
+  font-weight: inherit;
 }
