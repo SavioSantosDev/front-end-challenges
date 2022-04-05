@@ -7,6 +7,9 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  font-size: var(--font-size-body);
+  line-height: 1.5;
+  color: var(--color-paragraph);
 }
 
 h1,
@@ -17,10 +20,25 @@ h5,
 h6 {
   font-family: var(--font-family-headings);
   font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.2;
 }
 
 h1 {
   font-weight: 900;
+  font-size: var(--font-size-heading-1);
+}
+
+h2 {
+  font-size: var(--font-size-heading-2);
+}
+
+h3 {
+  font-size: var(--font-size-heading-3);
+}
+
+h4 {
+  font-size: var(--font-size-heading-4);
 }
 
 a {

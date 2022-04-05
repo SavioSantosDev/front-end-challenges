@@ -35,10 +35,10 @@
   text-decoration: none;
 }
 
-#global-footer address > svg {
-  width: 24px;
+#global-footer a:hover {
+  color: var(--white);
 }
 
-#global-footer address > svg:not(:last-child) {
-  margin-right: 32px;
+#global-footer address svg {
+  width: 24px;
 }

@@ -1,5 +1,5 @@
 #section-header {
-  padding-top: 128px;
+  padding-top: 192px;
   padding-bottom: 320px;
 
   background-size: 32px, cover;
@@ -8,7 +8,7 @@
 
 #section-header h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 64px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--white);

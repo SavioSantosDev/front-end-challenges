@@ -4,6 +4,52 @@
   padding: 0 var(--gutter);
 }
 
+.btn-learn-more {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  padding: 8px;
+  padding-bottom: 0;
+  position: relative;
+
+  font-weight: 900;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  font-family: var(--button-font-family);
+}
+
+.btn-learn-more span {
+  position: relative;
+  z-index: 100;
+}
+
+.btn-learn-more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 50;
+  bottom: 0;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: var(--yellow);
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+.btn-learn-more.yellow::after {
+  background-color: var(--yellow);
+}
+.btn-learn-more.soft-red::after {
+  background-color: var(--soft-red);
+}
+
+.btn-learn-more:hover::after {
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: var(--max-width-container-on-breakpoint-tablet);

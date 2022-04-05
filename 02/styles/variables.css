@@ -26,11 +26,25 @@
   --grayish-blue: #a7abae;
   --white: #ffffff;
 
+  --color-heading: var(--very-dark-desaturated-blue);
+  --color-paragraph: var(--very-dark-grayish-blue);
+
   /*
     ### Typography
   */
 
-  --font-size: 18px;
+  --font-size-body: 18px;
+  --font-size-heading-1: 72px;
+  --font-size-heading-2: 48px;
+  --font-size-heading-3: 32px;
+  --font-size-heading-4: 24px;
   --font-family-body: "Barlow", sans-serif;
   --font-family-headings: "Fraunces", serif;
+
+  /*
+    ### Button
+  */
+  --button-font-size: var(--font-size-heading-4);
+  --button-font-weight: 900;
+  --button-font-family: var(--font-family-headings);
 }
