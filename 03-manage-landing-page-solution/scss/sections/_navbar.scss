@@ -1,0 +1,30 @@
+@import '../variabes';
+
+nav#top-nav-bar {
+  padding: 16px;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 16px;
+    list-style-type: none;
+  }
+
+  button {
+    background-color: $bright-red;
+    padding: 16px 32px;
+    display: block;
+    border-radius: 100px;
+    box-shadow: 0px 8px 16px -8px $bright-red;
+
+    a {
+      font-weight: 700;
+      color: $vary-light-gray;
+      text-decoration: none;
+    }
+  }
+}
